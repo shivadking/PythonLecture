@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>3.4_Statements</title>
+<title>5.1_Conditional Statements</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,16 +13077,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.4---Statments">3.4 - Statments<a class="anchor-link" href="#3.4---Statments">&#182;</a></h1>
+<h1 id="5.1-Conditional-Statements">5.1 Conditional Statements<a class="anchor-link" href="#5.1-Conditional-Statements">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Python statements are the code instructions that are executed by the Python interpreter.</li>
-</ul>
+<h2 id="1.-If-statement">1. If statement<a class="anchor-link" href="#1.-If-statement">&#182;</a></h2>
+<pre><code>    Decision making is required when we want to execute a code only if a certain condition is satisfied.</code></pre>
 
 </div>
 </div>
@@ -13094,68 +13093,21 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Statements-Examples">Python Statements Examples<a class="anchor-link" href="#Python-Statements-Examples">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Let’s look at some simple statement examples.</li>
-</ul>
+<p><img src="../images/if_statement_flow_diagram.jpg" alt="If Statement"></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># statement 1</span>
- 
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>  <span class="c1"># statement 2</span>
-    <span class="k">pass</span>    <span class="c1"># statement 3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Multi-line-Statements">Python Multi-line Statements<a class="anchor-link" href="#Python-Multi-line-Statements">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Python statements are usually written in a single line. The newline character marks the end of the statement. If the statement is very long, we can explicitly divide into multiple lines with the line continuation character ().</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello There.</span><span class="se">\n</span><span class="s2">You have come to the right place to learn Python Programming.</span><span class="se">\n</span><span class="s2">&quot;</span> \
-          <span class="s2">&quot;Follow the tutorials to become expert in Python. &quot;</span> \
-          <span class="s2">&quot;Don&#39;t forget to share it with your friends too.&quot;</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> \
-              <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> \
-              <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span>
- 
-<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">math_result</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;To&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13172,10 +13124,45 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello There.
-You have come to the right place to learn Python Programming.
-Follow the tutorials to become expert in Python. Don&#39;t forget to share it with your friends too.
-55
+<pre>Welcome
+To
+Python
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">if</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;To&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bye&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Bye
 </pre>
 </div>
 </div>
@@ -13187,51 +13174,7 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="../images/3.4_Multi_line_statements.PNG" alt="3.4_Multi_line_statements"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>Python supports multi-line continuation inside parentheses ( ), brackets [ ], and braces { }. The brackets are used by List and the braces are used by dictionary objects. We can use parentheses for expressions, tuples, and strings.</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Hi</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Namaste&quot;</span><span class="p">)</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span>
-               <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span>
-               <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
- 
-<span class="n">prime_numbers_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span>
-                       <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
- 
-<span class="n">list_fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Banana&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Orange&quot;</span><span class="p">,</span> <span class="s2">&quot;Mango&quot;</span><span class="p">]</span>
- 
-<span class="n">dict_countries</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;USA&quot;</span><span class="p">:</span> <span class="s2">&quot;United States of America&quot;</span><span class="p">,</span> <span class="s2">&quot;IN&quot;</span><span class="p">:</span> <span class="s2">&quot;India&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;UK&quot;</span><span class="p">:</span> <span class="s2">&quot;United Kingdom&quot;</span><span class="p">,</span> <span class="s2">&quot;FR&quot;</span><span class="p">:</span> <span class="s2">&quot;France&quot;</span><span class="p">}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Can-we-have-multiple-statements-in-a-single-line?">Can we have multiple statements in a single line?<a class="anchor-link" href="#Can-we-have-multiple-statements-in-a-single-line?">&#182;</a></h2>
+<h3 id="Short-Hand-If">Short Hand If<a class="anchor-link" href="#Short-Hand-If">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13240,10 +13183,261 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">2</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a is greater than b&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a is greater than b
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-If..else">2. If..else<a class="anchor-link" href="#2.-If..else">&#182;</a></h2>
+<pre><code>    else -&gt; The else keyword catches anything which isn't caught by the preceding conditions.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/If_else_flow_diagram-1.jpg" alt="Python If Els"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even Number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd Number&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Even Number
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even Number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd Number&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Odd Number
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Short-Hand-If-...-Else">Short Hand If ... Else<a class="anchor-link" href="#Short-Hand-If-...-Else">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">330</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>B
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-if..elif..else">3. if..elif..else<a class="anchor-link" href="#3.-if..elif..else">&#182;</a></h2>
+<pre><code>elif -&gt; The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/if_elif.PNG" alt="Python If elif else"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">1122</span>
+<span class="k">if</span> <span class="mi">9</span> <span class="o">&lt;</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">99</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Two digit number&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">99</span> <span class="o">&lt;</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">999</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Three digit number&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">999</span> <span class="o">&lt;</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">9999</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Four digit number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number is &lt;= 9 or &gt;= 9999&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Four digit number
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-Nested-If">4. Nested If<a class="anchor-link" href="#4.-Nested-If">&#182;</a></h2>
+<pre><code>    You can have if statements inside if statements, this is called nested if statements.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">41</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Above ten,&quot;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;and also above 20!&quot;</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;but not above 20.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Above ten,
+and also above 20!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>3.4_Statements</title>
+<title>5.1_Numeric</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.4---Statments">3.4 - Statments<a class="anchor-link" href="#3.4---Statments">&#182;</a></h1>
+<h1 id="5.1-Numeric">5.1 Numeric<a class="anchor-link" href="#5.1-Numeric">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13085,8 +13085,11 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Python statements are the code instructions that are executed by the Python interpreter.</li>
+<li>Numerical data type holds numerical value. Following are the sub-types of numerical data type: </li>
 </ul>
+<p><code>Integers</code></p>
+<p><code>Float</code></p>
+<p><code>Complex Numbers</code></p>
 
 </div>
 </div>
@@ -13094,68 +13097,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Statements-Examples">Python Statements Examples<a class="anchor-link" href="#Python-Statements-Examples">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Let’s look at some simple statement examples.</li>
-</ul>
-
+<h3 id="Integers-are-used-to-represent-whole-number-values."><code>Integers</code> are used to represent whole number values.<a class="anchor-link" href="#Integers-are-used-to-represent-whole-number-values.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># statement 1</span>
- 
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>  <span class="c1"># statement 2</span>
-    <span class="k">pass</span>    <span class="c1"># statement 3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Multi-line-Statements">Python Multi-line Statements<a class="anchor-link" href="#Python-Multi-line-Statements">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Python statements are usually written in a single line. The newline character marks the end of the statement. If the statement is very long, we can explicitly divide into multiple lines with the line continuation character ().</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello There.</span><span class="se">\n</span><span class="s2">You have come to the right place to learn Python Programming.</span><span class="se">\n</span><span class="s2">&quot;</span> \
-          <span class="s2">&quot;Follow the tutorials to become expert in Python. &quot;</span> \
-          <span class="s2">&quot;Don&#39;t forget to share it with your friends too.&quot;</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> \
-              <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> \
-              <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span>
- 
-<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">math_result</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">124</span>
+<span class="c1"># it will be the integer as long as the value is a whole number.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13172,10 +13126,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello There.
-You have come to the right place to learn Python Programming.
-Follow the tutorials to become expert in Python. Don&#39;t forget to share it with your friends too.
-55
+<pre>100 124
 </pre>
 </div>
 </div>
@@ -13187,7 +13138,9 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="../images/3.4_Multi_line_statements.PNG" alt="3.4_Multi_line_statements"></p>
+<ul>
+<li><code>Keyword for Integers</code> is int</li>
+</ul>
 
 </div>
 </div>
@@ -13195,35 +13148,39 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>Python supports multi-line continuation inside parentheses ( ), brackets [ ], and braces { }. The brackets are used by List and the braces are used by dictionary objects. We can use parentheses for expressions, tuples, and strings.</code></p>
-
+<h3 id="Float-data-type-is-used-to-represent-decimal-point-values."><code>Float</code> data type is used to represent decimal point values.<a class="anchor-link" href="#Float-data-type-is-used-to-represent-decimal-point-values.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Hi</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Namaste&quot;</span><span class="p">)</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span>
-               <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span>
-               <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
- 
-<span class="n">prime_numbers_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span>
-                       <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
- 
-<span class="n">list_fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Banana&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Orange&quot;</span><span class="p">,</span> <span class="s2">&quot;Mango&quot;</span><span class="p">]</span>
- 
-<span class="n">dict_countries</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;USA&quot;</span><span class="p">:</span> <span class="s2">&quot;United States of America&quot;</span><span class="p">,</span> <span class="s2">&quot;IN&quot;</span><span class="p">:</span> <span class="s2">&quot;India&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;UK&quot;</span><span class="p">:</span> <span class="s2">&quot;United Kingdom&quot;</span><span class="p">,</span> <span class="s2">&quot;FR&quot;</span><span class="p">:</span> <span class="s2">&quot;France&quot;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span>  <span class="o">=</span> <span class="mf">10.25</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">12.30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10.25 12.3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13231,22 +13188,64 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Can-we-have-multiple-statements-in-a-single-line?">Can we have multiple statements in a single line?<a class="anchor-link" href="#Can-we-have-multiple-statements-in-a-single-line?">&#182;</a></h2>
+<ul>
+<li><code>Keyword for Float</code> is float</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Complexnumbers-are-used-to-represent-imaginary-values."><code>Complex</code>numbers are used to represent imaginary values.<a class="anchor-link" href="#Complexnumbers-are-used-to-represent-imaginary-values.">&#182;</a></h3><ul>
+<li>Complex numbers are written in the form, x + yj, where x is the real part and y is the imaginary part with ‘j’ at the end of the number. Here are some examples.</li>
+</ul>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span><span class="n">j</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(10+5j)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>Keyword for Complex</code> is complex</li>
+</ul>
+
+</div>
+</div>
 </div>
     </div>
   </div>

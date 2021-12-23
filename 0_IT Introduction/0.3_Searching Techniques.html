@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>3.4_Statements</title>
+<title>0.3_Searching Techniques</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,7 +13077,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.4---Statments">3.4 - Statments<a class="anchor-link" href="#3.4---Statments">&#182;</a></h1>
+<h1 id="Searching-Techniques">Searching Techniques<a class="anchor-link" href="#Searching-Techniques">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Linear-Search:">Linear Search:<a class="anchor-link" href="#Linear-Search:">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13085,7 +13092,15 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Python statements are the code instructions that are executed by the Python interpreter.</li>
+<li>very simple search algorithm</li>
+<li>will search sequential order one by one</li>
+<li>if match found will return value otherwise search continue till end of data</li>
+</ul>
+<p><code>Time Complexity:</code></p>
+<ul>
+<li><code>Best-case complexity = O(1)</code> occurs when the searched item is present at the first element in the search array.</li>
+<li><code>Worst-case complexity = O(n)</code> occurs when the required element is at the tail of the array or not present at all.</li>
+<li><code>Average- case complexity = average case</code> occurs when the item to be searched is in somewhere middle of the Array.</li>
 </ul>
 
 </div>
@@ -13094,7 +13109,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Statements-Examples">Python Statements Examples<a class="anchor-link" href="#Python-Statements-Examples">&#182;</a></h2>
+<h2 id="Binary-Search:">Binary Search:<a class="anchor-link" href="#Binary-Search:">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13102,151 +13117,21 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Let’s look at some simple statement examples.</li>
+<li>it’s fast search algorithm</li>
+<li>divide and conquer method</li>
+<li>data must be in sorted order</li>
+<li>mid = low + (high - low) / 2</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># statement 1</span>
- 
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>  <span class="c1"># statement 2</span>
-    <span class="k">pass</span>    <span class="c1"># statement 3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Multi-line-Statements">Python Multi-line Statements<a class="anchor-link" href="#Python-Multi-line-Statements">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>Complexities in binary search are given below:</code></p>
 <ul>
-<li>Python statements are usually written in a single line. The newline character marks the end of the statement. If the statement is very long, we can explicitly divide into multiple lines with the line continuation character ().</li>
+<li>The worst-case complexity in binary search is O(n log n).</li>
+<li>The average case complexity in binary search is O(n log n)</li>
+<li>Best case complexity = O (1)</li>
 </ul>
+<p><code>Binary search reduces the time to half as the comparison count is reduced significantly as compared to the linear search algorithm.</code></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello There.</span><span class="se">\n</span><span class="s2">You have come to the right place to learn Python Programming.</span><span class="se">\n</span><span class="s2">&quot;</span> \
-          <span class="s2">&quot;Follow the tutorials to become expert in Python. &quot;</span> \
-          <span class="s2">&quot;Don&#39;t forget to share it with your friends too.&quot;</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> \
-              <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> \
-              <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span>
- 
-<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">math_result</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello There.
-You have come to the right place to learn Python Programming.
-Follow the tutorials to become expert in Python. Don&#39;t forget to share it with your friends too.
-55
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="../images/3.4_Multi_line_statements.PNG" alt="3.4_Multi_line_statements"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>Python supports multi-line continuation inside parentheses ( ), brackets [ ], and braces { }. The brackets are used by List and the braces are used by dictionary objects. We can use parentheses for expressions, tuples, and strings.</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Hi</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Namaste&quot;</span><span class="p">)</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span>
-               <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span>
-               <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
- 
-<span class="n">prime_numbers_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span>
-                       <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
- 
-<span class="n">list_fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Banana&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Orange&quot;</span><span class="p">,</span> <span class="s2">&quot;Mango&quot;</span><span class="p">]</span>
- 
-<span class="n">dict_countries</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;USA&quot;</span><span class="p">:</span> <span class="s2">&quot;United States of America&quot;</span><span class="p">,</span> <span class="s2">&quot;IN&quot;</span><span class="p">:</span> <span class="s2">&quot;India&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;UK&quot;</span><span class="p">:</span> <span class="s2">&quot;United Kingdom&quot;</span><span class="p">,</span> <span class="s2">&quot;FR&quot;</span><span class="p">:</span> <span class="s2">&quot;France&quot;</span><span class="p">}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Can-we-have-multiple-statements-in-a-single-line?">Can we have multiple statements in a single line?<a class="anchor-link" href="#Can-we-have-multiple-statements-in-a-single-line?">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>

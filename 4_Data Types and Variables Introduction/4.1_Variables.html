@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>3.4_Statements</title>
+<title>4.1_Variables</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.4---Statments">3.4 - Statments<a class="anchor-link" href="#3.4---Statments">&#182;</a></h1>
+<h1 id="4.1-Variables">4.1 Variables<a class="anchor-link" href="#4.1-Variables">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13085,7 +13085,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Python statements are the code instructions that are executed by the Python interpreter.</li>
+<li>When we create a program, we often like to store values so that it can be used later. Programs use variables to access and manipulate data that is stored in memory. </li>
+<li>Based on the value assigned, the interpreter decides its data type. You can always store a different type in a variable.</li>
+<li>For example, if you store <code>5</code> in a variable, later, you can store as <code>Siva</code>.</li>
 </ul>
 
 </div>
@@ -13094,17 +13096,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Statements-Examples">Python Statements Examples<a class="anchor-link" href="#Python-Statements-Examples">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Let’s look at some simple statement examples.</li>
-</ul>
-
+<h3 id="The-following-programs-uses-variables-to-hold-the-data.">The following programs uses variables to hold the data.<a class="anchor-link" href="#The-following-programs-uses-variables-to-hold-the-data.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13113,49 +13105,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># statement 1</span>
- 
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>  <span class="c1"># statement 2</span>
-    <span class="k">pass</span>    <span class="c1"># statement 3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Multi-line-Statements">Python Multi-line Statements<a class="anchor-link" href="#Python-Multi-line-Statements">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Python statements are usually written in a single line. The newline character marks the end of the statement. If the statement is very long, we can explicitly divide into multiple lines with the line continuation character ().</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello There.</span><span class="se">\n</span><span class="s2">You have come to the right place to learn Python Programming.</span><span class="se">\n</span><span class="s2">&quot;</span> \
-          <span class="s2">&quot;Follow the tutorials to become expert in Python. &quot;</span> \
-          <span class="s2">&quot;Don&#39;t forget to share it with your friends too.&quot;</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> \
-              <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> \
-              <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span>
- 
-<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">math_result</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum of numbers are&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13172,10 +13125,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello There.
-You have come to the right place to learn Python Programming.
-Follow the tutorials to become expert in Python. Don&#39;t forget to share it with your friends too.
-55
+<pre>Sum of numbers are 25
 </pre>
 </div>
 </div>
@@ -13187,7 +13137,23 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="../images/3.4_Multi_line_statements.PNG" alt="3.4_Multi_line_statements"></p>
+<h2 id="Naming-Rule-of-Variable">Naming Rule of Variable<a class="anchor-link" href="#Naming-Rule-of-Variable">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You must follow these rules for naming the variable:</p>
+<ul>
+<li>A variable name can be of any size</li>
+<li>A variable name have allowed characters, which are a-z, A-Z, 0-9 and underscore (_)</li>
+<li>No special characters are allowed.</li>
+<li>The variable name cannot start with a number. It can only start with a character or an underscore.</li>
+<li>A variable name should not be a keyword</li>
+<li>A variable name cannot contain spaces.</li>
+<li>Variables in python are case sensitive. (i.e) Uppercase and lowercase characters are distinct.</li>
+</ul>
 
 </div>
 </div>
@@ -13195,32 +13161,24 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>Python supports multi-line continuation inside parentheses ( ), brackets [ ], and braces { }. The brackets are used by List and the braces are used by dictionary objects. We can use parentheses for expressions, tuples, and strings.</code></p>
-
+<h2 id="Creating-Variables">Creating Variables<a class="anchor-link" href="#Creating-Variables">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="In-python,-variable-is-created-when-we-assign-value-to-it.-In-following-code-fragment-two-variables-a-and-b-are-created.">In python, variable is created when we assign value to it. In following code fragment two variables a and b are created.<a class="anchor-link" href="#In-python,-variable-is-created-when-we-assign-value-to-it.-In-following-code-fragment-two-variables-a-and-b-are-created.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Hi</span><span class="se">\n</span><span class="s2">&quot;</span>
-           <span class="s2">&quot;Namaste&quot;</span><span class="p">)</span>
- 
-<span class="n">math_result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span>
-               <span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span>
-               <span class="mi">9</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
- 
-<span class="n">prime_numbers_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span>
-                       <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
- 
-<span class="n">list_fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Banana&quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Orange&quot;</span><span class="p">,</span> <span class="s2">&quot;Mango&quot;</span><span class="p">]</span>
- 
-<span class="n">dict_countries</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;USA&quot;</span><span class="p">:</span> <span class="s2">&quot;United States of America&quot;</span><span class="p">,</span> <span class="s2">&quot;IN&quot;</span><span class="p">:</span> <span class="s2">&quot;India&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;UK&quot;</span><span class="p">:</span> <span class="s2">&quot;United Kingdom&quot;</span><span class="p">,</span> <span class="s2">&quot;FR&quot;</span><span class="p">:</span> <span class="s2">&quot;France&quot;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">15</span>
 </pre></div>
 
     </div>
@@ -13231,7 +13189,27 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Can-we-have-multiple-statements-in-a-single-line?">Can we have multiple statements in a single line?<a class="anchor-link" href="#Can-we-have-multiple-statements-in-a-single-line?">&#182;</a></h2>
+<h3 id="Creating-Multiple-Variables-in-single-statement-with-different-values">Creating Multiple Variables in single statement with different values<a class="anchor-link" href="#Creating-Multiple-Variables-in-single-statement-with-different-values">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="s2">&quot;Orange&quot;</span><span class="p">,</span> <span class="s2">&quot;Banana&quot;</span><span class="p">,</span> <span class="s2">&quot;Apple&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Creating-Multiple-Variables-in-single-statement-with-same-values">Creating Multiple Variables in single statement with same values<a class="anchor-link" href="#Creating-Multiple-Variables-in-single-statement-with-same-values">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13240,7 +13218,219 @@ Follow the tutorials to become expert in Python. Don&#39;t forget to share it wi
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="s2">&quot;Orange&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Swapping-Variables">Swapping Variables<a class="anchor-link" href="#Swapping-Variables">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Swapping means interchanging values. To swap Python variables, you don’t need to do much.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>blue red
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Deleting-Variables">Deleting Variables<a class="anchor-link" href="#Deleting-Variables">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>You can also delete Python variables using the keyword 'del'.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="s1">&#39;red&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>red
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-8-24851b3798e4&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      2</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span>a<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      3</span> <span class="ansi-green-intense-fg ansi-bold">del</span> a
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span>a<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;a&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Constants">Constants<a class="anchor-link" href="#Constants">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.</li>
+<li>You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Declaring-and-assigning-value-to-a-constant">Declaring and assigning value to a constant<a class="anchor-link" href="#Declaring-and-assigning-value-to-a-constant">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">GRAVITY</span> <span class="o">=</span> <span class="mf">9.8</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">PI</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">GRAVITY</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.14
+9.8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>Note: In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them from variables, however, it does not actually prevent reassignment.</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
